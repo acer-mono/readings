@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>901</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,3" columnstretch="4,2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="2" column="0">
+      <layout class="QVBoxLayout" name="readings" stretch="0,0">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Показатели за: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>неделя</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>месяц</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>год</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="plot"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1" rowspan="3">
+      <layout class="QVBoxLayout" name="roomList" stretch="0,0">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Помещения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="roomListView"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" rowspan="2">
+      <layout class="QVBoxLayout" name="currentRoomInfo">
+       <item>
+        <widget class="QLabel" name="currentDate">
+         <property name="text">
+          <string>Сегодня: 26.12.1992</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="currentRoomLabel">
+         <property name="text">
+          <string>Хранилище №1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCommandLinkButton" name="addReadingsButton">
+         <property name="text">
+          <string>Внести/корректировать показания</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>902</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Печать</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Создание</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Редактирование</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Таблица</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>График</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Пользователь</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Помещение</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Пользователь</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Помещение</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
